@@ -3,9 +3,11 @@
 html,
 body,
 #root {
-  height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #1e1e1e;
-  /* overflow: hidden; scroll kapalı */
+  background-color: #0f0f0f;
+}
+
+body {
+  overflow: hidden;
 }

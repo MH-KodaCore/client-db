@@ -1,6 +1,7 @@
 import Header from "../components/layout/Header";
 import Navbar from "../components/layout/Navbar";
-import SideBar from "../components/layout/SideBar";
+import Sidebar from "../components/layout/Sidebar";
+import { Outlet } from "react-router-dom";
 
 const MainLayout = () => {
   return (
@@ -8,7 +9,8 @@ const MainLayout = () => {
       <div>
         <Header />
         <Navbar />
-        <SideBar />
+        <Sidebar />
+        <Outlet />
       </div>
     </>
   );
