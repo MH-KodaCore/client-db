@@ -1,10 +1,10 @@
 import { useState } from "react";
-import FormConnectURL from "./login/FormConnectURL";
-import FormStandart from "./login/FormStandart";
+import FormConnectURL from "components/login/FormConnectURL";
+import FormStandart from "components/login/FormStandart";
 
 const RightScreen = () => {
   const [activeForm, setActiveForm] = useState<"standart" | "connect">(
-    "standart"
+    "standart",
   );
 
   return (

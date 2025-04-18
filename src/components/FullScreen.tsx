@@ -1,5 +1,5 @@
-import LeftScreen from "./layout/Sidebar";
-import RightScreen from "./RightScreen";
+import LeftScreen from "components/layout/SideBar";
+import RightScreen from "components/RightScreen";
 
 const FullScreen = () => {
   return (

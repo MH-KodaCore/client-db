@@ -18,5 +18,3 @@ const Sidebar = () => {
 };
 
 export default Sidebar;
-
-// border-r border-[rgb(73,73,73)]
