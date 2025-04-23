@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import MainLayout from "layout";
-import DataBasa from "pages/DataBasa";
+import MainLayout from "@/layout";
+// import MainLayout from "";
+import DataBasa from "@/pages/DataBasa";
 
 const Router = () => {
   return (

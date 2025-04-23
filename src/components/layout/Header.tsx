@@ -1,10 +1,10 @@
 const Header = () => {
   return (
-    <div>
-      <div className="flex justify-center">
+    <>
+      <div className="flex justify-center h-[10%]">
         <img className="m-4 cursor-not-allowed" src="/QueryKit.svg" alt="" />
       </div>
-    </div>
+    </>
   );
 };
 

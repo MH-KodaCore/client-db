@@ -1,27 +1,43 @@
+import { NavLink } from "react-router-dom";
+
 const Navbar = () => {
   return (
-    <div className=" border-y  border-y-[rgb(73,73,73)]">
-      <ul className="flex  flex-row justify-around text-[#B9B9B9] m-4">
+    <div className=" border h-[8%] border-y-[#363636]">
+      <ul className="flex flex-row justify-around items-center text-[#B9B9B9] h-full">
         <li>
-          <p className="cursor-pointer">File</p>
+          <NavLink to="File" className="cursor-pointer">
+            File
+          </NavLink>
         </li>
         <li>
-          <p className="cursor-pointer">Edit</p>
+          <NavLink to="Edit" className="cursor-pointer">
+            Edit
+          </NavLink>
         </li>
         <li>
-          <p className="cursor-pointer">Database</p>
+          <NavLink to="Database" className="cursor-pointer">
+            Database
+          </NavLink>
         </li>
         <li>
-          <p className="cursor-pointer">Table</p>
+          <NavLink to="Table" className="cursor-pointer">
+            Table
+          </NavLink>
         </li>
         <li>
-          <p className="cursor-pointer">View</p>
+          <NavLink to="View" className="cursor-pointer">
+            View
+          </NavLink>
         </li>
         <li>
-          <p className="cursor-pointer">Window</p>
+          <NavLink to="Window" className="cursor-pointer">
+            Window
+          </NavLink>
         </li>
         <li>
-          <p className="cursor-pointer">Help</p>
+          <NavLink to="Help" className="cursor-pointer">
+            Help
+          </NavLink>
         </li>
       </ul>
     </div>
