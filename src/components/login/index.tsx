@@ -1,14 +1,8 @@
 import { invoke } from "@tauri-apps/api/core";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { TLogin } from "@/types";
 
-interface TLogin {
-  host: string;
-  port: string;
-  userName: string;
-  password: string;
-  dataBase: string;
-}
 const Login = () => {
   const navigate = useNavigate();
   const [loginData, setLoginData] = useState<TLogin>({
