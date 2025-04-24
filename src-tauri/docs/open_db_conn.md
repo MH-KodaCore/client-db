@@ -1,10 +1,10 @@
-# 1. `open_db_conn`
+# `open_db_conn`
 
 - Params
 
 ```json
 {
-    "conn_url": {
+    "connUrl": {
         "host": "string",
         "port": "string",
         "user": "string",
@@ -22,10 +22,10 @@ b) on error: `string`
 - Example
 
 ```typescript
-const open_db_conn = async () => {
+const openConn = async () => {
     try {
         await invoke('open_db_conn', {
-            conn_url: {
+            connUrl: {
                 host: "localhost",
                 port: "5432",
                 user: "postgres",
