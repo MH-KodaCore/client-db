@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { TLogin } from "@/types";
 import { login } from "@/styles";
+import ErrorMessage from "../Modal";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -13,6 +14,7 @@ const Login = () => {
     password: "",
     dataBase: "",
   });
+  const [natification, setNatification] = useState<string>();
 
   const open_db_conn = async () => {
     try {
@@ -28,6 +30,7 @@ const Login = () => {
 
       navigate("/connection");
     } catch (error) {
+      setNatification(`Ooops... ${error}`);
       console.log(`Ooops...: ${error}`);
     }
   };
@@ -43,6 +46,7 @@ const Login = () => {
 
   return (
     <>
+      <ErrorMessage message={natification} />
       <div className={login.wrapper}>
         <div className={login.inputs}>
           {/* host */}
