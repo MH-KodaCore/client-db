@@ -14,7 +14,8 @@ const Login = () => {
     password: "",
     dataBase: "",
   });
-  const [natification, setNatification] = useState<string>();
+  const [natification, setNatification] = useState<string>("");
+  const [isError, setIsError] = useState<boolean>(false);
 
   const open_db_conn = async () => {
     try {
@@ -31,6 +32,7 @@ const Login = () => {
       navigate("/connection");
     } catch (error) {
       setNatification(`Ooops... ${error}`);
+      setIsError(true);
       console.log(`Ooops...: ${error}`);
     }
   };
@@ -46,7 +48,11 @@ const Login = () => {
 
   return (
     <>
-      <ErrorMessage message={natification} />
+      <ErrorMessage
+        message={natification}
+        open={isError}
+        closeError={setIsError}
+      />
       <div className={login.wrapper}>
         <div className={login.inputs}>
           {/* host */}
