@@ -1,9 +1,10 @@
 import { NavLink } from "react-router-dom";
+import { navbar } from "@/styles";
 
 const Navbar = () => {
   return (
-    <div className=" border h-[8%] border-y-[#363636]">
-      <ul className="flex flex-row justify-around items-center text-[#B9B9B9] h-full">
+    <div className={navbar.wrapper}>
+      <ul className={navbar.lists}>
         <li>
           <NavLink to="File" className="cursor-pointer">
             File

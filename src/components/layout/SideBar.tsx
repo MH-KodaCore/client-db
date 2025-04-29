@@ -1,9 +1,10 @@
 import { NavLink } from "react-router-dom";
+import { sidebar } from "@/styles";
 
 const Sidebar = () => {
   return (
-    <div className="w-96 h-[82%] border-r border-r-[#363636]">
-      <div className="flex text-[#B9B9B9] divide-x divide-[#363636] border-b border-b-[#363636]">
+    <div className={sidebar.wrapper}>
+      <div className="flex text-[#B9B9B9] divide-x divide-[#637160] border-b border-[#637160]">
         <div className="cursor-pointer basis-2/4 text-center p-4">
           <NavLink to="/db" className="active:text-amber-200">
             DB
@@ -13,7 +14,6 @@ const Sidebar = () => {
           <NavLink to="/connection">Connection</NavLink>
         </div>
       </div>
-      <div className=""></div>
     </div>
   );
 };
