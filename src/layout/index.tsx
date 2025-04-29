@@ -10,7 +10,7 @@ const MainLayout = () => {
         <Header />
         <Navbar />
         <Sidebar />
-        <Outlet />
+        {/* <Outlet /> */}
       </div>
     </>
   );

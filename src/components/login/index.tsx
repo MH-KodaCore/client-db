@@ -28,8 +28,7 @@ const Login = () => {
           db_name: loginData.dataBase,
         },
       });
-
-      navigate("/connection");
+      navigate("dashboard");
     } catch (error) {
       setNatification(`Ooops... ${error}`);
       setIsError(true);
