@@ -5,3 +5,9 @@ export interface TLogin {
   password: string;
   dataBase: string;
 }
+
+export interface TMessage {
+  message: string;
+  open: boolean;
+  closeError: (val: boolean) => void;
+}

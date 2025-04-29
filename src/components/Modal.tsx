@@ -1,10 +1,5 @@
 import { error } from "@/styles";
-
-interface TMessage {
-  message: string;
-  open: boolean;
-  closeError: (val: boolean) => void;
-}
+import { TMessage } from "@/types";
 
 const ErrorMessage = ({ message, open, closeError }: TMessage) => {
   return (
